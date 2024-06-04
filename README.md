@@ -42,4 +42,4 @@ Amazon QuickSight Visualization: Utilized Amazon QuickSight to create interactiv
 This project successfully built a data pipeline for storing, managing, querying, and visualizing order data using AWS services. Partition pruning in Athena significantly optimized query performance. Visualizations created with Amazon QuickSight provided valuable insights into sales patterns.
 
 ### Access to Visualization:
-The visualizations created with Amazon QuickSight can be accessed at the following URL (note: access may be restricted): https://us-east-1.quicksight.aws.amazon.com/sn/accounts/339712881135/dashboards/ea12a883-fd6c-4f74-b1de-8cbd4d83d9c2?directory_alias=ganeshvadlamuri
+* The visualizations created with Amazon QuickSight can be accessed at the following URL (note: access may be restricted): https://us-east-1.quicksight.aws.amazon.com/sn/accounts/339712881135/dashboards/ea12a883-fd6c-4f74-b1de-8cbd4d83d9c2?directory_alias=ganeshvadlamuri
