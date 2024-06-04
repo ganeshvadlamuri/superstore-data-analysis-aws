@@ -1,5 +1,5 @@
 # superstore-data-analysis-aws
-AWS data pipeline for Superstore sales analysis (S3, Glue, Athena, QuickSight). Explore data acquisition, storage, querying &amp; visualization.
+* AWS data pipeline for Superstore sales analysis (S3, Glue, Athena, QuickSight). Explore data acquisition, storage, querying &amp; visualization.
 
 ## This project demonstrates an end-to-end data engineering workflow for analyzing sales order data using various AWS services:
 
