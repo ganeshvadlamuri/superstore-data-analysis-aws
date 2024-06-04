@@ -3,7 +3,7 @@ AWS data pipeline for Superstore sales analysis (S3, Glue, Athena, QuickSight). 
 
 ## This project demonstrates an end-to-end data engineering workflow for analyzing sales order data using various AWS services:
 
-## Project Objective: 
+### Project Objective: 
 Build a data pipeline to analyze order data from the Kaggle Superstore dataset and create visualizations for insights.
 
 Technologies Used:
