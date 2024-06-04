@@ -8,7 +8,7 @@ Build a data pipeline to analyze order data from the Kaggle Superstore dataset a
 
 ### Technologies Used:
 
-#### * AWS Identity and Access Management (IAM): 
+* AWS Identity and Access Management (IAM): 
 An IAM user with administrator access was created for project management.
 * Amazon Simple Storage Service (S3): An S3 bucket named "bucket-superstore-project" was created to store the order data in CSV format.
 * AWS Glue:
@@ -19,9 +19,9 @@ Partitions were created within the S3 bucket based on date (e.g., "snapshotday=2
 * Amazon QuickSight: Used to create visualizations (bar and pie charts) for analyzing order trends and patterns.
 
 ### Project Steps:
-
 1. IAM User Creation: An IAM user with administrator access was created for managing the project resources.
 2. S3 Bucket Setup: An S3 bucket named "bucket-superstore-project" was created to store the Superstore order data in CSV format.
+
 #### 3. Data Preparation:
 * Downloaded Superstore data from Kaggle.
 * Filtered data by date (January 1st and 2nd) to create separate CSV files representing daily sales data.
@@ -33,14 +33,17 @@ Set up a crawler with on-demand frequency to automatically discover new data fil
 6. Crawler Execution: Ran the crawler to register the data files in the Glue Data Catalog.
 7. Amazon Athena Queries:
 * Created a folder named "athena_logs" in the S3 bucket to store query logs.
-Performed queries on the "orders" table within the "db_superstore" database.
-Demonstrated the efficiency of partition pruning by comparing query times:
+* Performed queries on the "orders" table within the "db_superstore" database.
+* Demonstrated the efficiency of partition pruning by comparing query times:
 Full table scan: select * from "dbstore".orders (data scanned: 4.47 KB)
 Partitioned query: select * from "dbstore" where snapshot_day='2027-01-02' (data scanned: 1.99 KB)
-Amazon QuickSight Visualization: Utilized Amazon QuickSight to create interactive bar and pie charts for analyzing order trends based on the data retrieved from Athena.
+8. Amazon QuickSight Visualization: Utilized Amazon QuickSight to create interactive bar and pie charts for analyzing order trends based on the data retrieved from Athena.
 
 ### Results: 
 This project successfully built a data pipeline for storing, managing, querying, and visualizing order data using AWS services. Partition pruning in Athena significantly optimized query performance. Visualizations created with Amazon QuickSight provided valuable insights into sales patterns.
 
 ### Access to Visualization:
 * The visualizations created with Amazon QuickSight can be accessed at the following URL (note: access may be restricted): https://us-east-1.quicksight.aws.amazon.com/sn/accounts/339712881135/dashboards/ea12a883-fd6c-4f74-b1de-8cbd4d83d9c2?directory_alias=ganeshvadlamuri
+
+
+
