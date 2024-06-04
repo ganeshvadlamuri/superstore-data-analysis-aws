@@ -1,29 +1,29 @@
 # superstore-data-analysis-aws
-* AWS data pipeline for Superstore sales analysis (S3, Glue, Athena, QuickSight). Explore data acquisition, storage, querying &amp; visualization.
+AWS data pipeline for Superstore sales analysis (S3, Glue, Athena, QuickSight). Explore data acquisition, storage, querying &amp; visualization.
 
-## This project demonstrates an end-to-end data engineering workflow for analyzing sales order data using various AWS services:
+This project demonstrates an end-to-end data engineering workflow for analyzing sales order data using various AWS services:
 
 ### Project Objective: 
 Build a data pipeline to analyze order data from the Kaggle Superstore dataset and create visualizations for insights.
 
 ### Technologies Used:
 
-AWS Identity and Access Management (IAM): An IAM user with administrator access was created for project management.
-Amazon Simple Storage Service (S3): An S3 bucket named "bucket-superstore-project" was created to store the order data in CSV format.
-AWS Glue:
+* AWS Identity and Access Management (IAM): An IAM user with administrator access was created for project management.
+* Amazon Simple Storage Service (S3): An S3 bucket named "bucket-superstore-project" was created to store the order data in CSV format.
+* AWS Glue:
 A database named "db_superstore" was created in the AWS Glue Data Catalog.
 A crawler was configured to automatically discover and register new data files uploaded to the S3 bucket.
 Partitions were created within the S3 bucket based on date (e.g., "snapshotday=2017-01-01") for efficient data retrieval.
-Amazon Athena: Used for querying the orders table stored in the Glue Data Catalog. Athena leverages partition pruning to optimize queries by only scanning relevant data based on filters (e.g., specific date).
-Amazon QuickSight: Used to create visualizations (bar and pie charts) for analyzing order trends and patterns.
+* Amazon Athena: Used for querying the orders table stored in the Glue Data Catalog. Athena leverages partition pruning to optimize queries by only scanning relevant data based on filters (e.g., specific date).
+* Amazon QuickSight: Used to create visualizations (bar and pie charts) for analyzing order trends and patterns.
 
 ### Project Steps:
 
-IAM User Creation: An IAM user with administrator access was created for managing the project resources.
-S3 Bucket Setup: An S3 bucket named "bucket-superstore-project" was created to store the Superstore order data in CSV format.
-Data Preparation:
-Downloaded Superstore data from Kaggle.
-Filtered data by date (January 1st and 2nd) to create separate CSV files representing daily sales data.
+1. IAM User Creation: An IAM user with administrator access was created for managing the project resources.
+2. S3 Bucket Setup: An S3 bucket named "bucket-superstore-project" was created to store the Superstore order data in CSV format.
+3. Data Preparation:
+** Downloaded Superstore data from Kaggle.
+** Filtered data by date (January 1st and 2nd) to create separate CSV files representing daily sales data.
 AWS Glue Configuration:
 Created a database named "db_superstore" in the AWS Glue Data Catalog.
 Defined a new IAM role for the crawler with appropriate permissions.
