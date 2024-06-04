@@ -21,7 +21,7 @@ Partitions were created within the S3 bucket based on date (e.g., "snapshotday=2
 
 1. IAM User Creation: An IAM user with administrator access was created for managing the project resources.
 2. S3 Bucket Setup: An S3 bucket named "bucket-superstore-project" was created to store the Superstore order data in CSV format.
-3. Data Preparation:
+#### 3. Data Preparation:
 * Downloaded Superstore data from Kaggle.
 * Filtered data by date (January 1st and 2nd) to create separate CSV files representing daily sales data.
 4. AWS Glue Configuration:
