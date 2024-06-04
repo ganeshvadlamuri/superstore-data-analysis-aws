@@ -1,4 +1,4 @@
-# superstore-data-analysis-aws
+# Superstore-Data-Analysis-AWS
 AWS data pipeline for Superstore sales analysis (S3, Glue, Athena, QuickSight). Explore data acquisition, storage, querying &amp; visualization.
 
 This project demonstrates an end-to-end data engineering workflow for analyzing sales order data using various AWS services:
@@ -8,7 +8,8 @@ Build a data pipeline to analyze order data from the Kaggle Superstore dataset a
 
 ### Technologies Used:
 
-* AWS Identity and Access Management (IAM): An IAM user with administrator access was created for project management.
+#### * AWS Identity and Access Management (IAM): 
+An IAM user with administrator access was created for project management.
 * Amazon Simple Storage Service (S3): An S3 bucket named "bucket-superstore-project" was created to store the order data in CSV format.
 * AWS Glue:
 A database named "db_superstore" was created in the AWS Glue Data Catalog.
