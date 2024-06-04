@@ -46,4 +46,28 @@ This project successfully built a data pipeline for storing, managing, querying,
 * The visualizations created with Amazon QuickSight can be accessed at the following URL (note: access may be restricted): https://us-east-1.quicksight.aws.amazon.com/sn/accounts/339712881135/dashboards/ea12a883-fd6c-4f74-b1de-8cbd4d83d9c2?directory_alias=ganeshvadlamuri
 
 
+------------------------
+![iam_admin_access](https://github.com/ganeshvadlamuri/superstore-data-analysis-aws/assets/85800035/4155a430-75d3-4b76-b169-a5c7a7042ad1)
+![s3_bucket_creation](https://github.com/ganeshvadlamuri/superstore-data-analysis-aws/assets/85800035/e4423b96-8039-4fdf-82ef-be50dd20cd51)
+![s3_bucket_creation_1](https://github.com/ganeshvadlamuri/superstore-data-analysis-aws/assets/85800035/55e236a5-5367-4f3c-866d-d1eeae3f5364)
+![aws_glue_db](https://github.com/ganeshvadlamuri/superstore-data-analysis-aws/assets/85800035/bff1dc07-55bf-43eb-b47d-86307281a543)
+![aws_crawler](https://github.com/ganeshvadlamuri/superstore-data-analysis-aws/assets/85800035/3b88923d-8931-43b4-a1f4-2051db2217b0)
+![permission_policies](https://github.com/ganeshvadlamuri/superstore-data-analysis-aws/assets/85800035/94567579-08e1-4333-8e13-27e752d70bcc)
+![running_crawler](https://github.com/ganeshvadlamuri/superstore-data-analysis-aws/assets/85800035/c5ead0ca-9c65-4e23-a008-806b80950d1b)
+![schema](https://github.com/ganeshvadlamuri/superstore-data-analysis-aws/assets/85800035/33005cec-98db-48ba-87eb-ce0fc75d527c)
+![crawler](https://github.com/ganeshvadlamuri/superstore-data-analysis-aws/assets/85800035/09dc8c9a-16b1-47b0-9057-d29980c37507)
+![query_1](https://github.com/ganeshvadlamuri/superstore-data-analysis-aws/assets/85800035/4d877cf9-97f9-49eb-80f9-e5dc4c1fc618)
+![filtered_data](https://github.com/ganeshvadlamuri/superstore-data-analysis-aws/assets/85800035/3847783e-7f88-498c-a6f1-17a783d5d5c7)
+![quicksight_barchart](https://github.com/ganeshvadlamuri/superstore-data-analysis-aws/assets/85800035/39f36cc8-bc2c-42f8-bdb9-3010bbe7a069)
+![quicksight_piechart](https://github.com/ganeshvadlamuri/superstore-data-analysis-aws/assets/85800035/5790d1e2-ad50-48a1-9bc6-bedb92543d07)
+
+
+
+
+
+
+
+
+
+
 
