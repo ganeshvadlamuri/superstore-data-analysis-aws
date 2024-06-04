@@ -22,16 +22,16 @@ Partitions were created within the S3 bucket based on date (e.g., "snapshotday=2
 1. IAM User Creation: An IAM user with administrator access was created for managing the project resources.
 2. S3 Bucket Setup: An S3 bucket named "bucket-superstore-project" was created to store the Superstore order data in CSV format.
 3. Data Preparation:
-** Downloaded Superstore data from Kaggle.
-** Filtered data by date (January 1st and 2nd) to create separate CSV files representing daily sales data.
-AWS Glue Configuration:
+* Downloaded Superstore data from Kaggle.
+* Filtered data by date (January 1st and 2nd) to create separate CSV files representing daily sales data.
+4. AWS Glue Configuration:
 Created a database named "db_superstore" in the AWS Glue Data Catalog.
 Defined a new IAM role for the crawler with appropriate permissions.
 Set up a crawler with on-demand frequency to automatically discover new data files in the S3 bucket.
-Data Partitioning: Created two folders within the S3 bucket named "snapshotday=2017-01-01" and "snapshotday=2017-01-02" to store the filtered CSV files, enabling partitioned data access in Athena.
-Crawler Execution: Ran the crawler to register the data files in the Glue Data Catalog.
-Amazon Athena Queries:
-Created a folder named "athena_logs" in the S3 bucket to store query logs.
+5. Data Partitioning: Created two folders within the S3 bucket named "snapshotday=2017-01-01" and "snapshotday=2017-01-02" to store the filtered CSV files, enabling partitioned data access in Athena.
+6. Crawler Execution: Ran the crawler to register the data files in the Glue Data Catalog.
+7. Amazon Athena Queries:
+* Created a folder named "athena_logs" in the S3 bucket to store query logs.
 Performed queries on the "orders" table within the "db_superstore" database.
 Demonstrated the efficiency of partition pruning by comparing query times:
 Full table scan: select * from "dbstore".orders (data scanned: 4.47 KB)
